@@ -1,0 +1,757 @@
+{
+  "edition": "ultimate",
+  "version": "2026.10.22",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "20967e57cf8dc1b0176a59d97f5c8472f8094e96b4a8bef87a8e23a427c4639a",
+      "bytes": 109
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "sha256": "e91d54333940490524ef338c34978b6d4778c2c37e2e31d743c910d71ebc60b1",
+      "bytes": 376
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "39daa4610d48671257676398dc790f6ac030bed936fb21506d55adf52bc2fbac",
+      "bytes": 185
+    },
+    {
+      "path": "distribution/config-template.json",
+      "sha256": "41ffb1eb9f68eccf547aa54f01fc7fff228cb60a2fd8a322c1203b6de15bb0be",
+      "bytes": 1741
+    },
+    {
+      "path": "distribution/control.ps1",
+      "sha256": "a32b3caf01766a667f84378c1a94001d139d0dc90daadb07254209bda2c90b55",
+      "bytes": 13761
+    },
+    {
+      "path": "distribution/docs/先读我.md",
+      "sha256": "89423d21d4818dd8349ad864f72c8cbb75620bf2a7623d2c027b808d933f766f",
+      "bytes": 2714
+    },
+    {
+      "path": "distribution/docs/分享与升级.md",
+      "sha256": "8394195860cb36401e5e75693c5ff11738f1a987923f51b3586c6dd76a3aab92",
+      "bytes": 2311
+    },
+    {
+      "path": "distribution/docs/操作与配置.md",
+      "sha256": "4df70efddb1ccf07c779d041d1bfd9c1732e8c452dc684f6998a444ac0569cad",
+      "bytes": 5714
+    },
+    {
+      "path": "distribution/docs/版本说明.md",
+      "sha256": "114f8a1ecd85323c25423ce3927e33c036a924571634b6d1871b722ff826a41b",
+      "bytes": 2090
+    },
+    {
+      "path": "distribution/docs/经验与排障.md",
+      "sha256": "828bb1f3acc9cc351dd8940bbbdecbb38d0446e3341a8234ec78ab7379f3263f",
+      "bytes": 3988
+    },
+    {
+      "path": "distribution/docs/验证记录.md",
+      "sha256": "a46e8fe83682b151aced11d71a15e34010eefea0e9562d661ed009c7d6ea3098",
+      "bytes": 1664
+    },
+    {
+      "path": "distribution/doctor.mjs",
+      "sha256": "0eb372506586853c20603caac01ec648fe59fdac04746c9fee1340dcd7f461e8",
+      "bytes": 1972
+    },
+    {
+      "path": "distribution/runtime/package-lock.json",
+      "sha256": "b781d70638b6e9a2819712be5dc2a1db15d1ac14f8d5589e316cf64089b74c1e",
+      "bytes": 373309
+    },
+    {
+      "path": "distribution/runtime/package.json",
+      "sha256": "c1fcb15bcc0869be79bd3944e745af9328ebfbae0c493c2d2a9f67af31e4abec",
+      "bytes": 95
+    },
+    {
+      "path": "distribution/setup-server.mjs",
+      "sha256": "5bb60700f8eeb61bae8ba25677cb15c6ca863813e04e8355ac25a300dce0d68c",
+      "bytes": 7159
+    },
+    {
+      "path": "distribution/setup.html",
+      "sha256": "3abbc12ba27d1142a55254dbb2c48c65336b56d8028d65864cc6eb76399e54d1",
+      "bytes": 3791
+    },
+    {
+      "path": "distribution/verify-package.mjs",
+      "sha256": "064faf2ca0a3c9038f1edbd78698e211382487037968b56251a32a698e731d13",
+      "bytes": 1132
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "30acfc362e8404a3603612464ee186b285e8c9954d550f3fb4e06c0f2696e6e5",
+      "bytes": 12584
+    },
+    {
+      "path": "qq-bridge/.npmrc",
+      "sha256": "a093bb2fed59d699b7f9a62a5203cc196054c624e9c39c6d908c9e7db5dd2464",
+      "bytes": 22
+    },
+    {
+      "path": "qq-bridge/config.example.json",
+      "sha256": "0ee09b2780b53e4c8ab61269c979b975b63a9013c0cbfa4571118adfdddc23b9",
+      "bytes": 1739
+    },
+    {
+      "path": "qq-bridge/dsh/agent-presets/qq-chat/agent.cordis.yml",
+      "sha256": "f0ee673d7e7a59e01a89973808c6ecdd377637b7d5ef87f3ee6fc3c705c67bec",
+      "bytes": 2355
+    },
+    {
+      "path": "qq-bridge/dsh/agent-presets/qq-chat/preset.yml",
+      "sha256": "864edef4886c851879a003a0407be34226bf4ddccc4e12e53f46fe68ca8ae5ea",
+      "bytes": 153
+    },
+    {
+      "path": "qq-bridge/dsh/agent-presets/qq-chat/qq-tool-restrict.mjs",
+      "sha256": "ffc8b054ac7d3835644bc0245e937610720c19a6ffc2c51daa360859ccc72e2e",
+      "bytes": 531
+    },
+    {
+      "path": "qq-bridge/dsh/agent-presets/qq-chat-v2/agent.cordis.yml",
+      "sha256": "f0ee673d7e7a59e01a89973808c6ecdd377637b7d5ef87f3ee6fc3c705c67bec",
+      "bytes": 2355
+    },
+    {
+      "path": "qq-bridge/dsh/agent-presets/qq-chat-v2/preset.yml",
+      "sha256": "c304f13440e10c88912d1a7edc713cd1cb5ae106617de6b23ed2ab4dbe2df0c8",
+      "bytes": 196
+    },
+    {
+      "path": "qq-bridge/dsh/agent-presets/qq-chat-v2/qq-tool-restrict.mjs",
+      "sha256": "ffc8b054ac7d3835644bc0245e937610720c19a6ffc2c51daa360859ccc72e2e",
+      "bytes": 531
+    },
+    {
+      "path": "qq-bridge/package-lock.json",
+      "sha256": "b10f03f1366609066ee3dd226d3d7ce64777c9c8300a0200895d4c7a88968f9e",
+      "bytes": 79632
+    },
+    {
+      "path": "qq-bridge/package.json",
+      "sha256": "2d903d696d2dfeb568ead648c86513ce06bc54ddff2fe14022b0fcc64af33506",
+      "bytes": 774
+    },
+    {
+      "path": "qq-bridge/plugins/qq-agent-presets/package.json",
+      "sha256": "0d419cd805a6208a9089247035d18cb5aa1292c8a8e45b6a78ca801e2dccd5e6",
+      "bytes": 472
+    },
+    {
+      "path": "qq-bridge/plugins/qq-agent-presets/qq-tool-restrict.mjs",
+      "sha256": "fa6556bc9becf4d2623011cc6dfabcccdfcb3ff35f6241daabe8bff35af1050b",
+      "bytes": 12562
+    },
+    {
+      "path": "qq-bridge/plugins/qq-mode-console/cordis.patch.yml",
+      "sha256": "cbe8f4b2a241db7af9d85cd4041c38b188bfbd64a51288641a8b31189ab715f8",
+      "bytes": 668
+    },
+    {
+      "path": "qq-bridge/plugins/qq-mode-console/lib/index.js",
+      "sha256": "3c6cd7b67a43510685231a0da4d4ac7bb78836380ca9268a3651a2e68c2f22ec",
+      "bytes": 7238
+    },
+    {
+      "path": "qq-bridge/plugins/qq-mode-console/package.json",
+      "sha256": "7eef2cbf5b7643094186a42bbb2f10861bbe4bdb721e33810d63f773d032767d",
+      "bytes": 387
+    },
+    {
+      "path": "qq-bridge/public/companion-android.js",
+      "sha256": "0ba5cce0ab749ade5e05ba824bd58cde66d802dfd58bac7b411c39bfb68b2820",
+      "bytes": 2430
+    },
+    {
+      "path": "qq-bridge/public/companion-growth.js",
+      "sha256": "b05b993fe5d33a4ff176259c5958e5d960bc3894ed8539dcc0a396d27aa49d32",
+      "bytes": 4099
+    },
+    {
+      "path": "qq-bridge/public/companion-management.js",
+      "sha256": "017e6a908ef53536c871df15e873cfde36c60c08b622f2a18baa272f0135ccdf",
+      "bytes": 31405
+    },
+    {
+      "path": "qq-bridge/public/companion-singing.js",
+      "sha256": "861c3764fcbdae2db43588b2a256313473b9cf3d00f56fa5d91d70e24454854c",
+      "bytes": 10575
+    },
+    {
+      "path": "qq-bridge/public/companion-voices.js",
+      "sha256": "77cc7d6c94ed7187e521d0172588b05809f87a94fba818ea0cc65d9e1edf1b14",
+      "bytes": 5780
+    },
+    {
+      "path": "qq-bridge/public/companion.html",
+      "sha256": "5aa0f15ca2fce84ae81732547ec995cfc56c947e301dab62916ae6eb68c70857",
+      "bytes": 25861
+    },
+    {
+      "path": "qq-bridge/public/console.html",
+      "sha256": "76999e036c91f00838eb538e17304c291ea2c5c2d591affcfe6f63e4744da1e1",
+      "bytes": 234037
+    },
+    {
+      "path": "qq-bridge/public/whale-home.svg",
+      "sha256": "01a0a6041d25ec40d3230166ebb6a0e306f2f67393d6c549ad49b10362ee115b",
+      "bytes": 461
+    },
+    {
+      "path": "qq-bridge/public/whale-theme.css",
+      "sha256": "e2345155a5d3af8424b93b6c974d93c829120afdf051efdb33aa838116cb26ab",
+      "bytes": 11266
+    },
+    {
+      "path": "qq-bridge/release.json",
+      "sha256": "af501553f1f322fbf2e49e974716cd9564d90c4bc2abef456e4408127a68146d",
+      "bytes": 232
+    },
+    {
+      "path": "qq-bridge/roles/小鲸鱼群主.md",
+      "sha256": "45a2258d4cef893e6ef11e4c77bdceadf17f77b79901cc2d4578d835f47b27fe",
+      "bytes": 2371
+    },
+    {
+      "path": "qq-bridge/roles/通用鲸鱼.md",
+      "sha256": "45a2258d4cef893e6ef11e4c77bdceadf17f77b79901cc2d4578d835f47b27fe",
+      "bytes": 2371
+    },
+    {
+      "path": "qq-bridge/scripts/build-agent-preset-patches.mjs",
+      "sha256": "f1091909c6f03b9efa2a0e0a01d08e8a8550163a07e720b1cf84a92bde445850",
+      "bytes": 8390
+    },
+    {
+      "path": "qq-bridge/scripts/crop-companion-image.py",
+      "sha256": "6035219a88c5aefe6b8da5d9514eed5bcc621bf6213df651cc7964fdc612b386",
+      "bytes": 898
+    },
+    {
+      "path": "qq-bridge/scripts/decode-silk.mjs",
+      "sha256": "0227867623aaa184d5098e36f265250b98fee9bce00c553b6731e12c8fc5adbf",
+      "bytes": 543
+    },
+    {
+      "path": "qq-bridge/scripts/inspect-audio.py",
+      "sha256": "039f9e41680291d33057f39f93b0a2e769bcf9c721cc8d2da14ee5e4add8e5dc",
+      "bytes": 3230
+    },
+    {
+      "path": "qq-bridge/scripts/patch-snowluma-sdk.mjs",
+      "sha256": "cc3b9da52bb0dbd23e63683b207d6a41584004eaff71229ece9eb1b74bd2ecd6",
+      "bytes": 1797
+    },
+    {
+      "path": "qq-bridge/scripts/read-companion-file.py",
+      "sha256": "33cb8ddd20cba0899e3ed697893e61dbfa626ab36d3ca7dd6c405c5568c54ec4",
+      "bytes": 7381
+    },
+    {
+      "path": "qq-bridge/scripts/setup-dsh.mjs",
+      "sha256": "880ceeb02181e237b3ec948f1a93d79489da41141ded8e0d20fed4b813e4f8ff",
+      "bytes": 16531
+    },
+    {
+      "path": "qq-bridge/scripts/synthesize-doubao.py",
+      "sha256": "5f44de93230d2324b25cd100510cf7deb84c84a6cfd8d098c7393e3b0afb9cf1",
+      "bytes": 3408
+    },
+    {
+      "path": "qq-bridge/scripts/synthesize-neural.py",
+      "sha256": "8c9d72c3340c0fe0f575d85b3e2169bd5cf8e7b8edc1daedd18ec3f50258fd3a",
+      "bytes": 1214
+    },
+    {
+      "path": "qq-bridge/scripts/synthesize-voice.ps1",
+      "sha256": "baf943e5298a3ec374c87292a58b235cdf49bcb7159dd1065cf1bc6b975d1f3c",
+      "bytes": 1089
+    },
+    {
+      "path": "qq-bridge/src/admin-chat-history.js",
+      "sha256": "5eb3ba39e7bc95ca020aa316d447d534138fecc9f3a7ccc6b47d0d1968df5540",
+      "bytes": 5361
+    },
+    {
+      "path": "qq-bridge/src/admin-outreach.js",
+      "sha256": "b475d5cc0668149e68e5eb0fac3600d0947dfc438c58d0ba9096580a93248814",
+      "bytes": 3252
+    },
+    {
+      "path": "qq-bridge/src/android-access.js",
+      "sha256": "d72e425c9223e4a5ec9893e0e10eff29df78fb1e51890c15432342a383efa63b",
+      "bytes": 105
+    },
+    {
+      "path": "qq-bridge/src/android-device.js",
+      "sha256": "7e86a93d1e85aa3b2b68a35bec2168f8df447beb9b7da80d649925a7a55528e6",
+      "bytes": 332
+    },
+    {
+      "path": "qq-bridge/src/audience-role.js",
+      "sha256": "26c2d3bf9367ee5cb57dafd56329d54da4318981e5d2a8d6121b85fd2f9b3c26",
+      "bytes": 433
+    },
+    {
+      "path": "qq-bridge/src/audio-reader.js",
+      "sha256": "0323e618021a09f02017c508eee1d4f2143a8b2650e95510081062b446059b32",
+      "bytes": 3845
+    },
+    {
+      "path": "qq-bridge/src/background-work.js",
+      "sha256": "09832a6d4af4defa4d73707d23d29baafddfa10d065a7266b455fb8bd40431bd",
+      "bytes": 2093
+    },
+    {
+      "path": "qq-bridge/src/bridge.js",
+      "sha256": "b8fb7853804a6c4f7695521090c7197e284444e5a1fb5578fb0ed1004326bbbf",
+      "bytes": 666203
+    },
+    {
+      "path": "qq-bridge/src/chat-preferences.js",
+      "sha256": "e2d053a401e0c2f0e18492200a5edb94a3730345c1a6312e0839fe2015ca93bf",
+      "bytes": 5658
+    },
+    {
+      "path": "qq-bridge/src/comment-replies.js",
+      "sha256": "05cb6fab70319dcc77d21e3cc416bb1346bfa14e0b490511b46ac2adc55af363",
+      "bytes": 30610
+    },
+    {
+      "path": "qq-bridge/src/comment-reply-delivery.js",
+      "sha256": "829f101c0f61e0c00bc15a61c4257cea343478486ce82c695b01383071f69490",
+      "bytes": 10689
+    },
+    {
+      "path": "qq-bridge/src/comment-reply-style.js",
+      "sha256": "4b301f7c08bdbc97762753f3b453b150dea813442213b3ebf4924989b7bf05d2",
+      "bytes": 821
+    },
+    {
+      "path": "qq-bridge/src/companion-browser.js",
+      "sha256": "da3b4f2c05e68c8bfb76a35e39b473ef40d3eba72c43c49a991f566e19b39301",
+      "bytes": 8145
+    },
+    {
+      "path": "qq-bridge/src/companion-extension-worker.mjs",
+      "sha256": "f03ad298fbbb7cc3cdf1e27acb5e7ad84980ce354358964e92a252c392c7dfb0",
+      "bytes": 903
+    },
+    {
+      "path": "qq-bridge/src/companion-files.js",
+      "sha256": "14df57d1d646c90f0c6ef43b9e6720bd4d8ad56bee548cd49c1e06452e37c5ca",
+      "bytes": 10492
+    },
+    {
+      "path": "qq-bridge/src/companion-social.js",
+      "sha256": "55865badf4adb8a4cef2652bda0671117e7965028514511b2c2333dfd9bf3ac3",
+      "bytes": 6833
+    },
+    {
+      "path": "qq-bridge/src/companion-store.js",
+      "sha256": "b72bca1a964eaab3838928e347b98dc7fc6a33949b08b6c97ba080def6bc4a82",
+      "bytes": 11540
+    },
+    {
+      "path": "qq-bridge/src/companion-upgrade.js",
+      "sha256": "66ddd3899caa81c48a2d3250da65c6cb5c41c96cad5abc6230f78a38fdd59bf6",
+      "bytes": 140708
+    },
+    {
+      "path": "qq-bridge/src/companion-upgrades.js",
+      "sha256": "356bc36f6ff7ea78d5dcd16880d9f40e1976c52f4e0e494f24182afd08d1aaeb",
+      "bytes": 8885
+    },
+    {
+      "path": "qq-bridge/src/conversation-admission.js",
+      "sha256": "a3d0b1ddb77c8da16fa95fcd57257ff45db4b17554bfe889b819a840fa224bb0",
+      "bytes": 8139
+    },
+    {
+      "path": "qq-bridge/src/conversation-capabilities.js",
+      "sha256": "de811d2ce66d774cfc9a818d530d363cc347ff5ece00397fff1aff890ea58fa8",
+      "bytes": 3439
+    },
+    {
+      "path": "qq-bridge/src/conversation-files.js",
+      "sha256": "70fb2b90210a7a049f6db7911034d0d3069c44a97ccc57c6261c30f824a229f9",
+      "bytes": 6155
+    },
+    {
+      "path": "qq-bridge/src/conversation-recall.js",
+      "sha256": "4de7a9d0eae9ce71e1a8be267a7eab9a0ddd166b1e48d46434e2ca5539f776ba",
+      "bytes": 4553
+    },
+    {
+      "path": "qq-bridge/src/core/session-router.mjs",
+      "sha256": "1f42d5bef184319c7bb57ec50f7019398bdafc0b585432c8265c6e6d6cff2a42",
+      "bytes": 27947
+    },
+    {
+      "path": "qq-bridge/src/core/session-router.test.mjs",
+      "sha256": "1aa2fc4644f349f48b3821e5f63a769b4678bcf2e432b8847c68ff64702f7349",
+      "bytes": 15936
+    },
+    {
+      "path": "qq-bridge/src/cost-audit.js",
+      "sha256": "2d8c2abb70ca630d9a79f518c9351eece701e0dd75ef87bf9ca97e49fff6e456",
+      "bytes": 2891
+    },
+    {
+      "path": "qq-bridge/src/cost-policy.js",
+      "sha256": "136cbc94d1e167fc9eb03f949d166bd62a0f9262e2351d431cbe8e241a6f7765",
+      "bytes": 266
+    },
+    {
+      "path": "qq-bridge/src/dsh-client.js",
+      "sha256": "d383c6c9aedaaa19570a3e14bb94ed39d991aac2970d2a6e16faa8869a8e4e68",
+      "bytes": 45558
+    },
+    {
+      "path": "qq-bridge/src/forward.js",
+      "sha256": "900ede05f934faf1e3a3b07820a64945c74c8fdca5712ed88b4d26a8a1e5bce4",
+      "bytes": 9214
+    },
+    {
+      "path": "qq-bridge/src/full-song-delivery.js",
+      "sha256": "ccb8c5a4782cde11963bb8de537ea9d88c6cf67d721d8a13f9bafc6785131c77",
+      "bytes": 1585
+    },
+    {
+      "path": "qq-bridge/src/image-tool-result.js",
+      "sha256": "4d81bc25e9711c516fb24614f1bb15c6aca174733aca2c5f61dd0a197255c53f",
+      "bytes": 888
+    },
+    {
+      "path": "qq-bridge/src/kugou-reader.js",
+      "sha256": "16e73281650d2cc4933c7891790c70e17f125e8b324a52bb5d458bb3ad227472",
+      "bytes": 4491
+    },
+    {
+      "path": "qq-bridge/src/maintenance-jobs.js",
+      "sha256": "107446ac71d85c4417d8684ca54cbb73a55f2ff69a5cb7843dff514b43ea8c5b",
+      "bytes": 1465
+    },
+    {
+      "path": "qq-bridge/src/mcp-host-server.js",
+      "sha256": "42ee1b0b40f136bb68ec46ffaa8bb5b4c170fc68be5bf9035bbe2d878e3a538d",
+      "bytes": 4597
+    },
+    {
+      "path": "qq-bridge/src/mcp-snowluma-safe.js",
+      "sha256": "a8deb0e4e58dededfe72e35e5422c1c8858397dcfdc4bf6f403a974a2bb28ab8",
+      "bytes": 125343
+    },
+    {
+      "path": "qq-bridge/src/mcp-tool-catalog.js",
+      "sha256": "c2060e5700baeff8afae15a624c53b9533125b722ae7eb8db4aeed69d82116d3",
+      "bytes": 3163
+    },
+    {
+      "path": "qq-bridge/src/mcp-web-search-safe.js",
+      "sha256": "3f27e267fd366483d2f8a23e5e310f0c1fb411d550143aae2fcc347534758630",
+      "bytes": 3697
+    },
+    {
+      "path": "qq-bridge/src/md-to-plain.js",
+      "sha256": "4315e51f49d4085a0f7b41968e9962df0ae8b4a55bf5cdb0fb55d39ce8eddda3",
+      "bytes": 5102
+    },
+    {
+      "path": "qq-bridge/src/meme-library.js",
+      "sha256": "7653c4fed1ae48f56e824ea10e71dfcb866a6e9a4c9a0b321d0bbd4e9ddf7d27",
+      "bytes": 12100
+    },
+    {
+      "path": "qq-bridge/src/memory-policy.js",
+      "sha256": "3d5c371988540aeaeecc8a88ae2ca3b53355774deaa6139200bd0d75d2554646",
+      "bytes": 293
+    },
+    {
+      "path": "qq-bridge/src/mobile-task-budget.js",
+      "sha256": "1e8c5f0e9901de756f0c7995e1445f817c1cdee41ba3fdb96feb1662d393059b",
+      "bytes": 9124
+    },
+    {
+      "path": "qq-bridge/src/model-prices.js",
+      "sha256": "188a30cc31552d55a6903cff8346d163ef4c9e35d11e6cbd90377b42e4a70644",
+      "bytes": 11683
+    },
+    {
+      "path": "qq-bridge/src/music-materials.js",
+      "sha256": "b0db1fa22871fa8b2c88dae76696131f644851369e990f46b0e29739be790412",
+      "bytes": 27298
+    },
+    {
+      "path": "qq-bridge/src/music-store.js",
+      "sha256": "40e74c440de182a5f38994abb7b8c1f5a92de8f35b79964ec6551d9a708dbf31",
+      "bytes": 4632
+    },
+    {
+      "path": "qq-bridge/src/one-off-comment.js",
+      "sha256": "ea87e7d8309b6339d42afe141f7d57b1e2ce7070811d7878dfacc21b63832453",
+      "bytes": 217
+    },
+    {
+      "path": "qq-bridge/src/online-image-collection.js",
+      "sha256": "36c3773667c23763b5c28b43e56a1f9deac01969b79f1e03ecc4241aa9d203a3",
+      "bytes": 3830
+    },
+    {
+      "path": "qq-bridge/src/persona-growth.js",
+      "sha256": "8cf0e936e17498bcacc76a46fee86ad09864ce9640673efd96fcce9619e07000",
+      "bytes": 15689
+    },
+    {
+      "path": "qq-bridge/src/plugin-discovery.js",
+      "sha256": "384bbdf35dad68e039033fc9c6bc0555022b19e5b6cf415255131b20cf1804a3",
+      "bytes": 671
+    },
+    {
+      "path": "qq-bridge/src/plugin-review.js",
+      "sha256": "19de59c28638cfa3572482d25f343e51ba8f9218a7879d7e69c61be3d4a7f79d",
+      "bytes": 2828
+    },
+    {
+      "path": "qq-bridge/src/post-comment-queue.js",
+      "sha256": "ff564332950c5fdc9a2d434cc4774705dcc93592c551bcd126e5fcc303955699",
+      "bytes": 15169
+    },
+    {
+      "path": "qq-bridge/src/post-drafts.js",
+      "sha256": "68b9f756f4f243160b041022068e7f25ca9f97b3c7f0af32ee8ae26122b3f24a",
+      "bytes": 23512
+    },
+    {
+      "path": "qq-bridge/src/preset-prompt.js",
+      "sha256": "68c548bfee805359881ccc3996fdfc5704c4a9db657e073811f1ffcb604434ae",
+      "bytes": 8271
+    },
+    {
+      "path": "qq-bridge/src/prompt-context-cache.js",
+      "sha256": "74f9bed289433ba2be5319c0b3919be13868f2f8f37a72cb1f9314e6a6f54089",
+      "bytes": 3427
+    },
+    {
+      "path": "qq-bridge/src/qq-model-view.js",
+      "sha256": "940400676c6c290cb80c434f7f582678e072592493a345b58fcfd4c083e978b5",
+      "bytes": 3792
+    },
+    {
+      "path": "qq-bridge/src/qq-social-admin.js",
+      "sha256": "03ce8e643d1116ba7227cd168bde04086413c91b58d05ea8cccb63964ddc090a",
+      "bytes": 9861
+    },
+    {
+      "path": "qq-bridge/src/qq-workbench.js",
+      "sha256": "a0cd08316b619136676ad087683de0b13ae682b6cf2fb97ca7e0ab07296c9b4d",
+      "bytes": 8602
+    },
+    {
+      "path": "qq-bridge/src/qzone-detail-view.js",
+      "sha256": "e90ad242af8e175beea0ef063dd3ff7831afa654ff6e04f2ea794e8f2fc178e2",
+      "bytes": 1031
+    },
+    {
+      "path": "qq-bridge/src/release-edition.js",
+      "sha256": "63a71bc123e22d07321665a46018e8fd7e69a5407c2d226e8b95078f958624b5",
+      "bytes": 1587
+    },
+    {
+      "path": "qq-bridge/src/role-card.js",
+      "sha256": "cc24ccd4a6fcc8326ff5138f0f0e1df76e20fffc8dbec545f122da49afd38627",
+      "bytes": 4247
+    },
+    {
+      "path": "qq-bridge/src/safe-fetch.js",
+      "sha256": "b48108b48ee7d0bd23d2853db957fb6879ed2d067b0147bd9657b32f4701db41",
+      "bytes": 15861
+    },
+    {
+      "path": "qq-bridge/src/self-test.js",
+      "sha256": "6fc5f2201d43050e0c59de0597b6526e78a3b7e77a1d79f9a7485d0a3829c770",
+      "bytes": 5005
+    },
+    {
+      "path": "qq-bridge/src/send-voice-lib.js",
+      "sha256": "bb9e20187644fc6b816b015a39a56122d515cf1e949c55569b68034da2627da1",
+      "bytes": 912
+    },
+    {
+      "path": "qq-bridge/src/sensitive.js",
+      "sha256": "5b995729e191a33e89aa41028ab6aa3c7598dffe0aaa1081c326af4dff1ebe1e",
+      "bytes": 1740
+    },
+    {
+      "path": "qq-bridge/src/settings-config.js",
+      "sha256": "f8698a5082dcd6b010bf034295e7a163fad348ef08340bd4f5210994326122d0",
+      "bytes": 411
+    },
+    {
+      "path": "qq-bridge/src/shared-content.js",
+      "sha256": "cfd1f8e2b00d352a0ea4345bd9ed84bad02526b9e25024fd7ea48e4c9a8a462c",
+      "bytes": 6230
+    },
+    {
+      "path": "qq-bridge/src/silk-audio.js",
+      "sha256": "69eebda68b58631d7cdf8912dc809984c982a20c5769feff8e3735319c792f52",
+      "bytes": 1191
+    },
+    {
+      "path": "qq-bridge/src/singing.js",
+      "sha256": "c073ceb90e0c493feba151ed17fa0af40490368c19db58cd00c01cb026ea680a",
+      "bytes": 426
+    },
+    {
+      "path": "qq-bridge/src/slang-learner.js",
+      "sha256": "7e4ad1e2269a43f16be3e8b6acbb859d62d4de2ff0c65cd46231be012a7bcb73",
+      "bytes": 15896
+    },
+    {
+      "path": "qq-bridge/src/snowluma-conn.js",
+      "sha256": "d06684057774e4fb13045ff8ea2b1935ab8217021c168394c21d55bf674c18d7",
+      "bytes": 9880
+    },
+    {
+      "path": "qq-bridge/src/speech-delivery.js",
+      "sha256": "99ce157a71821881121a471340406769526dbe7b30c22b3fcc9437a9644c1262",
+      "bytes": 4713
+    },
+    {
+      "path": "qq-bridge/src/state-acl.mjs",
+      "sha256": "37259cb0d5d59906f664bfb28c2ce85e628cd486f4489506ffff4b22efa40437",
+      "bytes": 6766
+    },
+    {
+      "path": "qq-bridge/src/sticker-lib.js",
+      "sha256": "6169b2e87092a0e1a6b3f2c67d822af560324f09662fff333745bb88bcf2bed7",
+      "bytes": 14444
+    },
+    {
+      "path": "qq-bridge/src/surf-terminal-progress.js",
+      "sha256": "158581080af5b3f6f50ffbfadc5be5a75933d8fe8238c8ac3edf12298dd7c62d",
+      "bytes": 4346
+    },
+    {
+      "path": "qq-bridge/src/surfing.js",
+      "sha256": "4df108f46da2cdd84a470943db3a3497fdaac0dc69fcd016abbe298037cadaba",
+      "bytes": 21284
+    },
+    {
+      "path": "qq-bridge/src/token-expand-page.js",
+      "sha256": "91365dbd534275d91da87f49cec6448c0620e797de44ad654f013576cb022834",
+      "bytes": 442
+    },
+    {
+      "path": "qq-bridge/src/token-ledger.js",
+      "sha256": "e7ac256956ef3fb8abe49213c5ef526f3b98890e50699de767385cdd115c1812",
+      "bytes": 38209
+    },
+    {
+      "path": "qq-bridge/src/v2-wait.js",
+      "sha256": "88eef2d2f240e93ceb865fc9fc78d480df2219fafbd72b4e5a6f7ae1e5c8ed36",
+      "bytes": 1377
+    },
+    {
+      "path": "qq-bridge/src/voice-core.js",
+      "sha256": "8bc41fb3a430e4740e6344dda609d90e6131ae120651b062386f67acf8146cf1",
+      "bytes": 21265
+    },
+    {
+      "path": "qq-bridge/src/voice-health.js",
+      "sha256": "4cdb8391f02a6046f84a549c86927c82d3fe37e4ef750baa22559596fe8bb5a9",
+      "bytes": 1278
+    },
+    {
+      "path": "qq-bridge/src/web-research.js",
+      "sha256": "c620036f1620aac4fab79ac002399396f2c50be21c415b46cb42b7618f8d95a0",
+      "bytes": 4438
+    },
+    {
+      "path": "qq-bridge/src/whale-post-policy.js",
+      "sha256": "9d47351041a2d8abeb2cc867b5e6b3b51e81d97f2d69235f42b6d8e84cdaaee9",
+      "bytes": 371
+    },
+    {
+      "path": "qq-bridge/src/whale-scene-voice.js",
+      "sha256": "3122f18cbc80df789382b488ea0c505a13305dce8ceb5a3124681ab6c4dbbfd3",
+      "bytes": 1283
+    },
+    {
+      "path": "qq-bridge/src/xhh-dm.js",
+      "sha256": "8b97b78da2d6ccec9670485c31007e33e0c3748859f34e08c7c23b91179c2ae6",
+      "bytes": 1506
+    },
+    {
+      "path": "qq-bridge/src/xiaoheihe-experience.js",
+      "sha256": "15a301da2241cd3292db86b700ed9266bdfabcc884b2a0fed843417dc314502f",
+      "bytes": 2306
+    },
+    {
+      "path": "README.md",
+      "sha256": "44ea4dd3023a77c8d6605d08d647899a50647a7b5db60062be2b9c98de019257",
+      "bytes": 5413
+    },
+    {
+      "path": "start-whale.ps1",
+      "sha256": "6fbccb597001e7a4492a81ace740e4f02e5291d2b6429751421cd247a9797ef3",
+      "bytes": 135
+    },
+    {
+      "path": "stop-whale.ps1",
+      "sha256": "6565b47fe01b909dbf367d13a17b0d09649f1d5920c9a38418f18728a1ff1201",
+      "bytes": 98
+    },
+    {
+      "path": "UPSTREAM.md",
+      "sha256": "b2faa36b58df45cd7386ae3f6624b43540a2018a900340bd3aea9395a4a78303",
+      "bytes": 322
+    },
+    {
+      "path": "先读我.md",
+      "sha256": "89423d21d4818dd8349ad864f72c8cbb75620bf2a7623d2c027b808d933f766f",
+      "bytes": 2714
+    },
+    {
+      "path": "分享与升级.md",
+      "sha256": "8394195860cb36401e5e75693c5ff11738f1a987923f51b3586c6dd76a3aab92",
+      "bytes": 2311
+    },
+    {
+      "path": "启动小鲸鱼.cmd",
+      "sha256": "a4764762a875cba6b8431a3c35c28ad3bd9c37d05804c565ae5bf517d33c981d",
+      "bytes": 132
+    },
+    {
+      "path": "操作与配置.md",
+      "sha256": "4df70efddb1ccf07c779d041d1bfd9c1732e8c452dc684f6998a444ac0569cad",
+      "bytes": 5714
+    },
+    {
+      "path": "版本说明.md",
+      "sha256": "114f8a1ecd85323c25423ce3927e33c036a924571634b6d1871b722ff826a41b",
+      "bytes": 2090
+    },
+    {
+      "path": "经验与排障.md",
+      "sha256": "828bb1f3acc9cc351dd8940bbbdecbb38d0446e3341a8234ec78ab7379f3263f",
+      "bytes": 3988
+    },
+    {
+      "path": "验证记录.md",
+      "sha256": "a46e8fe83682b151aced11d71a15e34010eefea0e9562d661ed009c7d6ea3098",
+      "bytes": 1664
+    }
+  ],
+  "channel": "github-source"
+}

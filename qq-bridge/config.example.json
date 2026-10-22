@@ -1,0 +1,86 @@
+{
+  "ownerQQ": null,
+  "consolePort": 3119,
+  "consoleToken": "",
+  "dsh": {
+    "baseUrl": "http://127.0.0.1:3082",
+    "provider": "deepseek-official",
+    "model": "deepseek-flash",
+    "reasoningEffort": "high",
+    "allowRemote": false
+  },
+  "snowluma": {
+    "wsUrl": "ws://127.0.0.1:3001",
+    "httpUrl": "http://127.0.0.1:3000",
+    "accessToken": "",
+    "followDiscoveredEndpoint": false
+  },
+  "allow": {
+    "private": [],
+    "groups": []
+  },
+  "deny": {
+    "private": [],
+    "groups": []
+  },
+  "allowAllWhenEmpty": false,
+  "agentPreset": "qq-chat",
+  "workspaceTitle": "小鲸鱼聊天",
+  "sessionCwd": "",
+  "role": {
+    "maxInjectChars": 6000
+  },
+  "companion": {
+    "enabled": true,
+    "dailyArchive": false,
+    "autoLearn": false,
+    "qzone": false,
+    "tts": true,
+    "voiceEngine": "local",
+    "localVoiceName": "auto",
+    "externalRole": "通用鲸鱼",
+    "agentTasks": false,
+    "localPowerShellPath": "powershell.exe"
+  },
+  "slang": {
+    "enabled": true,
+    "extractMinMessages": 20,
+    "extractCooldownMs": 1800000,
+    "autoResearch": false,
+    "injectMax": 6
+  },
+  "backgroundWork": {
+    "enabled": false,
+    "maxDailyJobs": 4,
+    "cooldownMs": 1800000,
+    "retryMs": 3600000
+  },
+  "social": {
+    "proactiveEnabled": false
+  },
+  "socialV2": {
+    "enabled": true,
+    "agentPreset": "qq-chat-v2",
+    "tools": {
+      "sendVoice": true
+    },
+    "proactive": {
+      "enabled": false
+    },
+    "wake": {
+      "maxWakePerMinute": 1,
+      "maxWakePerHour": 12
+    },
+    "context": {
+      "wakeUnreadLimit": 8,
+      "wakeRecentLimit": 4,
+      "wakeMaxChars": 16000
+    }
+  },
+  "security": {
+    "interceptNotify": true
+  },
+  "distribution": {
+    "compactTools": true
+  }
+}

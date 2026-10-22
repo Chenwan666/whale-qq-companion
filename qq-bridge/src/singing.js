@@ -1,0 +1,2 @@
+function unavailable(){throw Error('当前公开分享版未包含此功能');}
+export const SINGING_VOICES=[];export const singingDuration=unavailable;export const runSingingProcess=unavailable;export class Singing{constructor(){this.data={enabled:false,songs:[],jobs:[],disabledVoices:[],voices:[]};}list(){return {enabled:false,ready:false,songs:[],voices:[],jobs:[]};}status(){return {enabled:false,ready:false,jobs:[]};}}

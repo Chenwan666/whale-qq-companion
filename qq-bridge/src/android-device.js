@@ -1,0 +1,2 @@
+function unavailable(){throw Error('当前公开分享版未包含此功能');}
+export const runAndroidWorker=unavailable;export class AndroidDevice{constructor(){this.busy=false;this.history=[];}status(){return {enabled:false,paused:true,busy:false,available:false};}cancelScope(){}configure(){unavailable();}run(){unavailable();}}

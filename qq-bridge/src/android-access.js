@@ -1,0 +1,1 @@
+export const ANDROID_SHARED_ACTIONS=new Set();export function androidConversationAllowed(){return false;}

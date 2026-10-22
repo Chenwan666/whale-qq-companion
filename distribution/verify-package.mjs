@@ -1,0 +1,5 @@
+import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),manifest=JSON.parse(fs.readFileSync(path.join(root,'MANIFEST.json'),'utf8'));
+const changed=[];for(const row of manifest.files){const file=path.resolve(root,row.path);if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.realpathSync(file).startsWith(fs.realpathSync(root)+path.sep)||createHash('sha256').update(fs.readFileSync(file)).digest('hex')!==row.sha256)changed.push(row.path);}
+const edition=JSON.parse(fs.readFileSync(path.join(root,'qq-bridge','release.json'),'utf8'));if(edition.features.android!==false||edition.features.voice!==(edition.edition==='ultimate'))changed.push('release.json edition contract');
+const report={ok:changed.length===0,edition:edition.edition,checked:manifest.files.length,changed,note:'检查发布源文件。运行后新增的私人配置与记忆不在发布清单中，不应再次打包分享。'};console.log(JSON.stringify(report,null,2));process.exitCode=report.ok?0:1;

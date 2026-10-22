@@ -1,0 +1,12 @@
+{
+  "edition": "ultimate",
+  "release": "2026.10.22",
+  "features": {
+    "android": false,
+    "voice": true,
+    "singing": false,
+    "desktop": false
+  },
+  "defaultRole": "通用鲸鱼",
+  "runtime": "source-only-windows-x64"
+}
